@@ -1,0 +1,121 @@
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('file-3g6hJZ8WzXi3SE4AyefBk7.webp');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.MainPanel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.MainPanel h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.Greet {
+  margin-top: 70px;
+  padding-left: 15px;
+}
+
+.Main, .Main-1, .Main-2 {
+  font-size: 60px;
+  color: #00FF00;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  margin: 0;
+}
+
+.Main {
+  animation-delay: 0s;
+}
+
+.Main-1 {
+  font-size: 50px;
+  animation-delay: 1s;
+}
+
+.Main-2 {
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.infos {
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 20px; /* Minimal space below headings */
+  color: #00FF00;
+  text-decoration: none;
+  font-size: 18px;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  animation-delay: 3s;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 15px;
+  background-color: #121212;
+  border: 2px solid #00FF00;
+  border-radius: 12px; /* Rounded corners */
+}
+
+.infos:hover {
+  background-color: #00FF00;
+  color: #121212;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.infos::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00FF00;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.infos:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
