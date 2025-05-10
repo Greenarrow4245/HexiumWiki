@@ -1,7 +1,4 @@
 # HexiumWiki
-Sure! Here's the updated README:
-
-
 ---
 
 HexiumWiki README
