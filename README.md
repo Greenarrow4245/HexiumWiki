@@ -1,4 +1,4 @@
-~# HexiumWiki
+~~ HexiumWiki
 ---
 
 HexiumWiki README
@@ -26,7 +26,7 @@ Stay up to date with the latest news, events, and announcements. Join the offici
 
 Click here to join the Discord server!
 
-We can't wait to see you on the server and in the Discord!~
+We can't wait to see you on the server and in the Discord!~~
 
 **Discontinued**
 
